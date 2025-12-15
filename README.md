@@ -143,41 +143,6 @@ environmental-justice-ai/
 6. 1 billion tokens/month free
 ```
 
-## 🌐 Deployment
-
-### GitHub Pages (Easiest)
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/yourusername/environmental-justice-ai
-git push -u origin main
-```
-
-Then enable GitHub Pages in your repo Settings.
-
-### Render.com
-1. Push code to GitHub
-2. Visit render.com
-3. Create New → Static Site
-4. Connect repo
-5. Deploy (automatic)
-
-### Vercel
-1. Visit vercel.com
-2. Import GitHub repo
-3. Deploy (automatic)
-
-### Netlify
-1. Visit netlify.com
-2. New site from Git
-3. Connect GitHub
-4. Deploy
-
-### Traditional Hosting
-Upload `index.html` and `app.js` to any web server.
-
 ## 📖 Usage Examples
 
 ### Example 1: Analyze Chicago
