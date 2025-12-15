@@ -1,0 +1,44 @@
+{
+  "name": "environmental-justice-ai",
+  "version": "1.0.0",
+  "description": "Comprehensive Environmental Justice AI integrating all US federal EJ datasets with free AI APIs",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/environmental-justice-ai"
+  },
+  "keywords": [
+    "environmental-justice",
+    "EJ",
+    "EPA",
+    "EJScreen",
+    "CDC-EJI",
+    "CEJST",
+    "Justice40",
+    "climate-justice",
+    "sustainability",
+    "AI",
+    "mapping",
+    "environmental-burdens",
+    "disadvantaged-communities"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions"
+  ]
+}

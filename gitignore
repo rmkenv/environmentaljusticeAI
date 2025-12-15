@@ -1,0 +1,64 @@
+# API Keys & Secrets
+config.js
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Data files (optional - if using local data)
+data/
+*.csv
+*.xlsx
+*.xls
+*.gdb
+*.zip
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE specific
+.vscode/settings.json
+.idea/workspace.xml
+*.iml
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
