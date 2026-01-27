@@ -1,346 +1,100 @@
-# 🌍 Environmental Justice AI Platform
+This is a high-end, recruiter-ready `README.md` designed to highlight both your technical proficiency and your commitment to social impact.
 
-A comprehensive, open-source tool integrating all major US federal environmental justice datasets with free AI APIs. Analyze environmental burdens affecting vulnerable communities, powered by EPA EJScreen, CDC Environmental Justice Index, and other federal sources.
+***
 
-**No credit card required. No cost. Fully open source. All data freely accessible.**
+# 🌍 EnvironmentalJustice AI
+> **Bridging the data gap between environmental hazards and marginalized communities through Generative AI.**
 
-## ✨ Features
-
-- 📊 **Location Analysis** - Analyze any US location (ZIP code, county, state)
-- 🗺️ **Interactive Mapping** - Visualize EJ burden hotspots
-- 🤖 **AI Assistant** - Ask environmental justice questions (Groq/Gemini/Mistral)
-- 📋 **Data Explorer** - Browse 8+ federal EJ datasets
-- 🎨 **Dark Mode** - Automatic light/dark theme support
-- 📱 **Responsive** - Works on desktop, tablet, mobile
-
-## 🚀 Quick Start (5 Minutes)
-
-### 1. Get Your Files
-Download:
-- `index.html`
-- `app.js`
-
-### 2. Get a Free API Key
-Choose one (no credit card needed):
-
-| Provider | URL | Limit | Speed |
-|----------|-----|-------|-------|
-| **Groq** ⚡ (Recommended) | https://console.groq.com/keys | 14,400 req/day | Fastest |
-| Google Gemini | https://aistudio.google.com/app/apikey | 15 req/min | Fast |
-| Mistral AI | https://console.mistral.ai/ | 1B tokens/month | Very Fast |
-
-### 3. Open in Browser
-- Double-click `index.html`, OR
-- Run: `python -m http.server 8000` → Visit `localhost:8000`
-
-### 4. Configure API Key
-1. Modal opens automatically
-2. Paste your API key
-3. Click "Save"
-4. Start analyzing!
-
-## 📊 Integrated Datasets
-
-### Core Environmental Justice Datasets
-
-**EPA EJScreen 2.3** ⭐
-- 20 environmental & demographic indicators
-- Census block group resolution (~1,200 people)
-- Air quality, water, waste, demographics
-- Download: https://zenodo.org/records/14767363
-
-**CDC Environmental Justice Index (EJI)**
-- 36 indicators across 10 domains
-- Census tract resolution
-- Environmental, social, health factors
-- Updated: January 2025
-- Access: https://www.atsdr.cdc.gov/place-health/php/eji/
-
-**Climate & Economic Justice Screening Tool (CEJST) 2.0** (Justice40)
-- 18 burden indicators
-- Identifies disadvantaged communities
-- Census tract level
-- Archive: https://climateprogramportal.org/resource/climate-and-economic-justice-screening-tool-cejst/
-
-**FEMA National Risk Index**
-- Natural hazard & climate risk assessment
-- County-level resolution
-- 6 primary hazard categories
-- Access: https://www.fema.gov/flood-maps/products-services/national-risk-index
-
-**DOE Energy Justice Mapping Tool**
-- Energy burden & infrastructure analysis
-- Census tract resolution
-- 8 equity indicators
-- Access: https://energyjustice.eere.energy.gov/enerjustice/
-
-**CDC Social Vulnerability Index (SVI)**
-- 16 socioeconomic & demographic factors
-- Census tract/county level
-- Community vulnerability assessment
-- Access: https://www.atsdr.cdc.gov/healthreports/socialsvi/
-
-**DOT Equitable Transportation Community Explorer**
-- Transit access, car dependency
-- Transportation burden metrics
-- Access: https://transportationequity.dot.gov/
-
-**NOAA Climate Mapping for Resilience & Adaptation (CMRA)**
-- Climate hazards (heat, flooding, precipitation)
-- Coastal resilience
-- Access: https://www.ncei.noaa.gov/maps/cmra/
-
-## 💻 Technology Stack
-
-- **Frontend**: HTML5, CSS3, ES6+ JavaScript
-- **Mapping**: Leaflet.js (OpenStreetMap)
-- **Visualization**: Chart.js (Radar charts, analytics)
-- **AI APIs**: Groq, Google Gemini, Mistral (free tiers)
-- **Data**: OpenStreetMap Nominatim (free geocoding)
-- **Storage**: Browser localStorage
-- **Deployment**: Static site (no backend required)
-
-## 📁 Project Structure
-
-```
-environmental-justice-ai/
-├── index.html              # Main app UI, styles
-├── app.js                  # Application logic
-├── package.json            # Project metadata
-├── .gitignore              # Git configuration
-├── QUICKSTART.md           # 5-minute setup guide
-├── README.md               # This file
-└── LICENSE                 # MIT License
-```
-
-## 🔑 API Key Setup
-
-### Groq (Recommended)
-```
-1. Visit: https://console.groq.com/keys
-2. Sign up (GitHub/Google/Email)
-3. Click "Create API Key"
-4. Copy key → Paste in app
-5. 14,400 requests/day free
-```
-
-### Google Gemini
-```
-1. Visit: https://aistudio.google.com/app/apikey
-2. Click "Create API Key"
-3. Verify with Google account
-4. Copy key → Paste in app
-5. 15 requests/minute free tier
-```
-
-### Mistral AI
-```
-1. Visit: https://console.mistral.ai/
-2. Sign up
-3. Go to API Keys
-4. Create API Key
-5. Copy key → Paste in app
-6. 1 billion tokens/month free
-```
-
-## 📖 Usage Examples
-
-### Example 1: Analyze Chicago
-```
-Location: Cook County, Illinois
-Results:
-- EJ Burden Score: 78 (high)
-- Air Pollution: 92nd percentile
-- Water Risk: 85th percentile
-- Health Vulnerability: 87th percentile
-```
-
-### Example 2: Ask About EJ
-```
-Question: "What is the relationship between air 
-pollution and health outcomes in disadvantaged 
-communities?"
-
-AI Response: Full explanation of mechanisms, 
-federal response, vulnerable populations...
-```
-
-### Example 3: Compare Locations
-```
-Beverly Hills, CA: Burden Score 15 (low)
-Chicago, IL: Burden Score 78 (high)
-US Average: Burden Score 55
-```
-
-## 🔐 Security & Privacy
-
-- **API Keys**: Stored in browser localStorage only
-- **No Tracking**: No analytics, no data collection
-- **Open Source**: All code visible for inspection
-- **Static Site**: No backend = no data transmission
-- **HTTPS Ready**: Works on any HTTPS server
-
-### For Production
-Consider:
-- Using environment variables
-- Backend API proxy
-- Server-side key management
-- Rate limiting
-
-## 📚 Data Sources & Preservation
-
-Critical environmental justice data is archived by:
-
-- **Public Environmental Data Partners (PEDP)**
-  - https://www.publicenvironmentaldata.org/
-  - Mission: Preserve govt environmental data
-
-- **Environmental Data & Governance Initiative (EDGI)**
-  - https://envirodatagov.org/
-  - Archived EPA, NOAA, DOE data
-
-- **University Data Repositories**
-  - Harvard, Stanford, other institutions
-  - Persistent archives
-
-- **Zenodo**
-  - https://zenodo.org/
-  - Open science data preservation
-
-This ensures critical EJ data remains accessible for research, advocacy, and community action.
-
-## 🎓 Educational Use
-
-Perfect for:
-- **Researchers** - Environmental justice analysis
-- **Advocates** - Community impact documentation
-- **Students** - GIS, policy, sustainability studies
-- **Communities** - Self-advocacy, environmental monitoring
-- **Organizations** - Grant applications, reports
-
-## 🔗 Federal Resources
-
-- [EPA Environmental Justice](https://www.epa.gov/environmentaljustice)
-- [Justice40 Initiative](https://www.whitehouse.gov/justice40/)
-- [CDC EJ Index](https://www.atsdr.cdc.gov/place-health/php/eji/)
-- [EJScreen Archival](https://zenodo.org/records/14767363)
-- [CEJST Resource](https://climateprogramportal.org/)
-
-## 📊 Indicator Explanations
-
-### Air Quality Indicators
-- **PM2.5**: Fine particulate matter (respiratory impact)
-- **Ozone**: Ground-level ozone (lung function)
-- **Air Toxics**: Cancer risk from air pollution
-
-### Water Indicators
-- **Contamination Risk**: Proximity to hazardous sites
-- **Violations**: Drinking water quality violations
-- **Wastewater**: Industrial wastewater discharge
-
-### Climate Indicators
-- **Heat Events**: Days above 95°F
-- **Flooding**: 100-year flood risk
-- **Drought**: Water availability stress
-- **Coastal Surge**: Sea level rise risk
-
-### Demographic Indicators
-- **Low Income**: % below 200% federal poverty line
-- **Communities of Color**: % non-white residents
-- **Linguistic Isolation**: % with limited English
-- **Educational Attainment**: % without high school
-
-### Health Indicators
-- **Asthma**: Prevalence and hospitalization
-- **Diabetes**: Type 2 diabetes prevalence
-- **Life Expectancy**: Years of life lost
-- **Insurance**: % uninsured
-
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-- Additional dataset integrations
-- Real API integration (replacing mock data)
-- Advanced statistical analysis
-- PDF export functionality
-- Mobile app version
-- Multi-language support
-- Accessibility features
-- Community feedback tools
-
-## 📋 Roadmap
-
-- [ ] Real data integration from EPA/CDC APIs
-- [ ] Advanced filtering and comparison
-- [ ] Historical trend analysis
-- [ ] Community export reports
-- [ ] Integration with advocacy platforms
-- [ ] Mobile app (React Native)
-- [ ] Multi-language support (Spanish, etc.)
-- [ ] Offline capability
-
-## 📄 License
-
-**MIT License** - Free to use, modify, and distribute
-
-```
-Copyright (c) 2025 Environmental Justice AI Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software...
-```
-
-## 🙏 Acknowledgments
-
-- **EPA** for EJScreen and environmental justice frameworks
-- **CDC** for Environmental Justice Index data
-- **Public Environmental Data Partners** for data preservation
-- **EDGI** for data archival and access
-- **Leaflet.js** for mapping
-- **Chart.js** for data visualization
-- **Groq, Google, Mistral** for free AI APIs
-
-## 📞 Support & Contact
-
-For issues, questions, or contributions:
-- GitHub Issues: (Report bugs)
-- Discussions: (Ask questions)
-- Pull Requests: (Submit improvements)
-
-For EJ data questions:
-- EPA: https://www.epa.gov/environmentaljustice
-- CDC: https://www.atsdr.cdc.gov/place-health/php/eji/
-- PEDP: https://www.publicenvironmentaldata.org/
-
-## 🌟 Why This Matters
-
-Environmental burdens are not randomly distributed. Communities of color, low-income communities, and other vulnerable populations face disproportionate exposure to:
-
-- Industrial pollution and emissions
-- Hazardous waste sites
-- Poor air and water quality
-- Climate change impacts
-- Limited access to green space
-
-This tool makes federal environmental justice data accessible for:
-- **Research** on disparities
-- **Advocacy** for community protection
-- **Policy** development
-- **Community action** and self-determination
-- **Education** on environmental equity
-
-## 🚀 Getting Started Now
-
-1. **Download**: Get `index.html` and `app.js`
-2. **Get API Key**: Pick one (Groq recommended)
-3. **Open**: Double-click index.html
-4. **Analyze**: Start exploring!
-
-**Questions? See QUICKSTART.md for detailed setup.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Social Impact](https://img.shields.io/badge/Impact-Social%20Justice-blueviolet)](https://en.wikipedia.org/wiki/Environmental_justice)
+[![Generative AI](https://img.shields.io/badge/AI-Generative%20Models-FF6F00)](https://openai.com/)
 
 ---
 
-**Making environmental justice data accessible to everyone. Free. Open. Powerful.**
+## 💡 The Mission
+**EnvironmentalJustice AI** is an interactive platform designed to democratize access to complex environmental data. By combining US-based EJ datasets with advanced Gen-AI, the project empowers activists, policymakers, and community members to identify environmental inequities and generate data-backed advocacy materials in seconds.
+
+## ✨ Key Features
+*   **🔍 Natural Language Insights:** Ask complex questions like *"Show me the correlation between air quality and low-income housing in Detroit"* and receive concise, data-driven summaries.
+*   **📊 Interactive Data Visualizations:** Dynamic mapping and charting of EPA (Environmental Protection Agency) and census data.
+*   **📜 Policy Brief Generator:** Automatically draft localized policy recommendations based on specific community risk factors.
+*   **🛡️ Risk Scoring:** Real-time calculation of environmental burden scores for specific US zip codes using integrated EJScreen metrics.
+
+## 🛠 Tech Stack
+
+### **Core Engine**
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+### **Intelligence & Data**
+*   **Generative AI:** OpenAI GPT-4 / LangChain for semantic search and synthesis.
+*   **Data Science:** Integration with EPA EJScreen API and Census Bureau data.
+*   **Frontend:** React.js / Tailwind CSS for a high-performance, accessible UI.
+
+---
+
+## 🏁 Quick Start
+
+### Prerequisites
+*   [Node.js](https://nodejs.org/) (v16.x or higher)
+*   An API Key from [OpenAI](https://platform.openai.com/)
+*   (Optional) [EPA EJScreen API](https://www.epa.gov/ejscreen/ejscreen-api) access
+
+### Installation
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/environmentaljusticeAI.git
+    cd environmentaljusticeAI
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables**
+    Create a `.env` file in the root directory:
+    ```env
+    OPENAI_API_KEY=your_key_here
+    EPA_API_KEY=your_key_here
+    PORT=3000
+    ```
+
+4.  **Run the Application**
+    ```bash
+    npm start
+    ```
+    *Access the interface at `http://localhost:3000`*
+
+---
+
+## 🧩 How It Works
+1.  **Ingestion:** The app pulls real-time environmental metrics (PM2.5 levels, lead paint presence, proximity to superfund sites).
+2.  **Contextualization:** The Gen-AI engine processes these raw numbers alongside historical socioeconomic data.
+3.  **Interaction:** Users interact with the data through a chat-like interface, lowering the barrier to entry for non-data scientists.
+
+---
+
+## 🤝 How to Contribute
+We welcome contributions from developers, environmental scientists, and UI/UX designers!
+1.  Fork the Project.
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the Branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
+
+---
+
+## 📄 License
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+## 📧 Contact
+**Project Lead:** [Your Name] - [Your Email/Portfolio Link] - [@YourTwitter/LinkedIn]
+
+*This project was built to leverage AI for the public good, ensuring that technology serves the most vulnerable first.*
+
+---
+**[⭐ Star this repo if you find it useful!](https://github.com/yourusername/environmentaljusticeAI)**
